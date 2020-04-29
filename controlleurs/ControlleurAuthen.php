@@ -17,7 +17,7 @@ if(isset($_POST['user']) AND isset($_POST['pwd']))
         if($rep)
         {
             //   header("location:../vues/formulaire.php");
-              header("location:index.php?page=ContolleurFormulaire");
+              header("location:index.php?page=ControlleurFormulaire");
 
         
         }
