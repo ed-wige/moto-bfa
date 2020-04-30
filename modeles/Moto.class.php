@@ -22,9 +22,9 @@ class Moto{
   }
 
    //les setteurs
-   public function setNuméro_de_serie($numero_de_serie){
-    if (is_string($numero_de_derie)){
-      $this->numero_de_serie=$numero_de_derie;
+   public function setNumero_de_serie($numero_de_serie){
+    if (is_string($numero_de_serie)){
+      $this->numero_de_serie=$numero_de_serie;
     }
   }
 
@@ -46,7 +46,7 @@ class Moto{
     }
   }
 
-  public function setCatégorie($categorie){
+  public function setCategorie($categorie){
     if (is_string($categorie)){
       $this->categorie=$categorie;
     }
@@ -71,7 +71,7 @@ class Moto{
    }
 
    public function modele(){
-    return $this->_modele;
+    return $this->modele;
    }
 
    public function cylindre(){
@@ -87,4 +87,7 @@ class Moto{
    public function prix(){
     return $this->prix;
    }
+  public function __construct(array $data){
+     $this->hydrate($data);
+  }
 }

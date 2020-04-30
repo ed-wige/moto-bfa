@@ -4,16 +4,16 @@ function toUpdate($statu){
         echo('hidden');
     }
 }
-$motos=new Mmanager();
+$motos=new MotoManager();
 $motoliste=$motos->getMarque();
 $nombre=$motos->getNombre();
-if(isset($_GET["serie"])){
-    $motos->supprimer($_GET["serie"]);
+if(isset($_GET["numero_de_serie"])){
+    $motos->supprimer($_GET["numero_de_serie"]);
 }
 if(isset($_GET["marque"])){
     $motoliste=$motos->getMarque($_GET["marque"]);
     $nombre=$motos->getNombre($_GET["marque"]);
 }
-$contenu="../vues/liste.vue.php";
-require("../vues/app.vue.php");
+require_once ("../vues/liste.php")
+
 ?>

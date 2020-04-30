@@ -12,12 +12,12 @@
 require_once ("header.php");
 ?>
 
-<form method="post" action="" enctype="multipart/form-data" data-toggle="validator" id="frm">
+<form method="post" action="" enctype="multipart/form-data" data-toggle="validator" id="frm" >
 <h2> <center > Enregistrement d'une moto </center></h2> <br>
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputEmail4">Numéro de serie</label>
-              <input type="text" name="numero" class="form-control" id="inputnom" >   
+              <input type="text" name="numero_de_serie" class="form-control" id="inputnom" >   
             </div>
             <div class="form-group col-md-6">
               <label for="inputEmail4">Marque</label>
